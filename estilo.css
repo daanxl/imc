@@ -1,0 +1,76 @@
+main{ /* define o conteúdo principal dentro do <body> em seu documento ou aplicação */
+    display: flex; /* especifica o tipo de caixa de renderização usada por um elemento */
+    width: 100vw; /* altura */
+    height: 100vh; /* largura */
+    justify-content: center; /*  Alinha os itens flex no container de acordo com a direção */
+    align-items: center; /* é usada para definir o alinhamento dos itens dentro do contêiner flexível ou na janela fornecida */
+}
+.fundo{
+    background-color: black; /* define a cor de fundo de um elemento */
+    margin: 0; /* define a área de margem nos quatro lados do elemento */
+}
+.quadrado{
+    display: flex;
+    flex-direction: column; /* define como os itens flexíveis são colocados no contêiner flexível, definindo o eixo principal e a direção */
+    background: rgb(255,198,0); /* cor de fundo */
+    width: 360px;
+    height: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px; /* permite definir como bordas arredondadas */
+    box-shadow: 0 0 10px black; /* é utilizado para adicionar efeitos de sombra em volta de um elemento */
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font: bold 2.5rem serif; /* formata texto */
+    border-bottom: solid 5px black; /* é um shortcut para definir diversas propriedades da borda de baixo (bottom) ao mesmo tempo; ele define a espessura, cor e tipo da borda de uma só vez */
+    margin-bottom: 20px; /* define a margin area na parte inferior de um elemento */
+}
+.input{ /* é usado para criar controles interativos para formulários baseados na web para receber dados do usuário */
+    display: flex;
+    width: 300px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.input input{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: none; /* utilizada para adicionar um contorno ao elemento e está localizada entre o padding e a margin */
+    outline: 0;  /* é uma propriedade abreviada para configurar uma ou mais das propriedades de contorno outline-style (en-US), outline-width (en-US) e outline-color (en-US) em uma única declaração */
+    font: bold 1.5rem serif;
+    text-align: center; /* descreve como conteúdo inline, como texto, é alinhado no elemento pai em bloco */
+}
+.input label{
+    font: bold 1.5rem serif;
+}
+button{ /* representa um botão clicável */
+    width: 300px;
+    height: 40px;
+    font: bold 1.2rem serif;
+    background: #000;
+    color: rgb(255,198,0); /* definine o valor da cor de um elemento com seu conteúdo em texto e seus decorações */
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer; /*  especifica o cursor do mouse mostrado quando o ponteiro do mouse está sobre um elemento */
+}
+.result{
+    display: flex;
+    margin-top: 20px; /* indica o espaço acima do elemento */
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    font: italic 1.5rem serif;
+    box-shadow: 0px 0px 10px black;
+    background: #000;
+    color: rgb(255,198,0);
+    padding: 20px; /* define uma a distância entre o conteúdo de um elemento e suas bordas */
+    box-sizing: border-box; /* é utilizada para alterar a propriedade padrão da box model, usada para calcular larguras (widths) e alturas (heights) dos elementos */
+    user-select: none; /* serve para controlar o conteúdo que pode ser selecionado no site */
+}
